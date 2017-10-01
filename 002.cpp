@@ -3,7 +3,7 @@ using namespace std;
 int main()
 {
     int i, j;
- string a , b , m;
+ string a , b , c;
 	getline(cin , a);
 	j = a.length();
     for (i = j - 1; i >= 0; --i)
@@ -20,8 +20,8 @@ int main()
             {b += a[i];}}}
    j = b.length();
     for (i = j - 1; i >= 0; i--)
-    {m += b[i];}
-    if (m == b)
+    {c += b[i];}
+    if (c == b)
     {cout << '1';}
 	else
     {cout << '0';}
