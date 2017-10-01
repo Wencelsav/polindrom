@@ -3,25 +3,25 @@ using namespace std;
 int main()
 {
     int i, j;
- string a , k , m;
+ string a , b , m;
 	getline(cin , a);
 	j = a.length();
     for (i = j - 1; i >= 0; --i)
     {if ((a[i]) > 64)
         {if ((a[i]) < 91)
-            {k += a[i];
+            {b += a[i];
             }}
 		if ((a[i]) > 96)
         {if ((a[i]) < 123)
-            {k += a[i] - 32;
+            {b += a[i] - 32;
             }}
 		if ((a[i])> 47 )
         {if ((a[i])< 58 )
-            {k += a[i];}}}
-    p = k.length();
+            {b += a[i];}}}
+   j = b.length();
     for (i = j - 1; i >= 0; i--)
-    {m += k[i];}
-    if (m == k)
+    {m += b[i];}
+    if (m == b)
     {cout << '1';}
 	else
     {cout << '0';}
