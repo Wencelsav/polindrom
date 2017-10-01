@@ -25,7 +25,5 @@ int main()
     {cout << '1';}
 	else
     {cout << '0';}
-	cin.get();
-
-	return 0;
+	
 }
