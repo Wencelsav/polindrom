@@ -2,11 +2,11 @@
 using namespace std;
 int main()
 {
-    int i, p;
+    int i, j;
  string a , k , m;
 	getline(cin , a);
-	p = a.length();
-    for (i = p - 1; i >= 0; --i)
+	j = a.length();
+    for (i = j - 1; i >= 0; --i)
     {if ((a[i]) > 64)
         {if ((a[i]) < 91)
             {k += a[i];
@@ -19,7 +19,7 @@ int main()
         {if ((a[i])< 58 )
             {k += a[i];}}}
     p = k.length();
-    for (i = p - 1; i >= 0; i--)
+    for (i = j - 1; i >= 0; i--)
     {m += k[i];}
     if (m == k)
     {cout << '1';}
