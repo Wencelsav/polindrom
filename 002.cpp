@@ -1,29 +1,31 @@
-#include "stdafx.h"
-#include <iostream>
-#include <string.h>
-#include <conio.h>
- 
-int main(int argc, char *argv[])
-{ 
-char oldstr[128];
-char newstr[128];
-gets(oldstr);
-int cout=0;
-while(oldstr[cout++]!='\0')
-printf("%c", *strlwr(&oldstr[cout]));
-return 0;
-}
 #include <iostream>
 using namespace std;
-int main() {
-    string com;
-    int res=1;
-    cin>>com;
-    for(int i=0; i <com.length()/2;i++){
-        if (com[i]!=com[com.length()-i-1]){
-            res=0;
-            break;
-        }};
-    cout<<res;
-    return 0;
+int main()
+{
+    int i, p;
+ string a , k , m;
+	getline(cin , a);
+	p = a.length();
+    for (i = p - 1; i >= 0; --i)
+    {if ((a[i]) > 64)
+        {if ((a[i]) < 91)
+            {k += a[i];
+            }}
+		if ((a[i]) > 96)
+        {if ((a[i]) < 123)
+            {k += a[i] - 32;
+            }}
+		if ((a[i])> 47 )
+        {if ((a[i])< 58 )
+            {k += a[i];}}}
+    p = k.length();
+    for (i = p - 1; i >= 0; i--)
+    {m += k[i];}
+    if (m == k)
+    {cout << '1';}
+	else
+    {cout << '0';}
+	cin.get();
+
+	return 0;
 }
